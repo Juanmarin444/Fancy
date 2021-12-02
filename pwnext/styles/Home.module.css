@@ -1,0 +1,236 @@
+.main {
+  height: 100vh;
+  background: black;
+}
+
+.main video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1;
+}
+
+.header h1 {
+  color: white;
+  font-size: 5rem;
+  text-shadow: 2px 2px 6px #000000;
+}
+
+.header h3 {
+  font-weight: 400;
+  color: white;
+  font-size: 2.1875rem;
+  text-shadow: 2px 2px 6px #000000;
+  padding:0;
+}
+
+.blend {
+  background: black;
+  height: 100vh;
+  width: 100%;
+  opacity: .4;
+  position: absolute;
+}
+
+.section {
+  background: white;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.section h1 {
+  margin: 0;
+  padding: 0;
+  /* padding-top: 15%; */
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+/****** About Section ******/
+.aboutpage {
+  background: #353535;
+  color: white;
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  /* width: 90%; */
+  /* max-width: 1000px; */
+  /* padding-top: 5rem; */
+}
+
+.aboutpageInfo {
+  padding: 5rem;
+}
+
+.aboutpageInfo > * {
+  padding: 1.2rem;
+}
+
+.aboutpageInfo > h1 {
+  font-size: 2.5rem;
+}
+
+.aboutpageInfo > h3 {
+  font-size: 1.5rem;
+}
+
+.aboutpageInfo > p {
+  font-size: 1.2rem;
+}
+
+.aboutpageMyskills > p {
+  text-align: center;
+}
+
+.aboutpageFacts {
+  /* margin: 0 auto; */
+  /* width: 90%; */
+  /* max-width: 1000px; */
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  /* padding-top: 6.25rem; */
+}
+
+.factsMonkey > img {
+  max-width: 350px;
+}
+
+.factsList > p {
+  margin: 2rem;
+  font-size: 1.2rem;
+}
+
+.aboutpage h1 {
+
+}
+.aboutpage p {
+}
+
+@media (max-width: 935px) {
+  .aboutpage {
+    width: 95%;
+    padding-top: 4rem;
+  }
+  .aboutpageInfo > * {
+    padding: 1rem;
+  }
+  .aboutpageInfo {
+    padding: 3rem;
+  }
+  .aboutpageInfo > h1 {
+    font-size: 2rem;
+  }
+
+  .aboutpageInfo > h3 {
+    font-size: 1rem;
+  }
+
+  .aboutpageInfo > p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .aboutpage {
+    padding-top: 3.5rem;
+  }
+  .aboutpageInfo {
+    padding: 2rem;
+  }
+  .aboutpageInfo > * {
+    padding: .8rem;
+  }
+  .aboutpageInfo > h1 {
+    font-size: 1.5rem;
+  }
+
+  .aboutpageInfo > h3 {
+    font-size: 1rem;
+  }
+
+  .aboutpageInfo > p {
+    font-size: 1rem;
+  }
+  .aboutpageFacts {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+  }
+  .factsList > p {
+    margin: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .aboutpage {
+    padding-top: 2rem;
+  }
+  .aboutpageInfo {
+    padding: 1rem;
+  }
+  .aboutpageInfo > * {
+    padding: .6rem;
+  }
+  .aboutpageFacts {
+    font-size: 1rem;
+    padding-top: 3.75rem;
+  }
+  .factsList > p {
+    margin: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .aboutpage {
+    padding-top: 1rem;
+  }
+  .aboutpageInfo {
+    padding: 0;
+  }
+  .aboutpageInfo > * {
+    padding: .4rem;
+  }
+  .aboutpageFacts {
+    font-size: .85rem;
+    padding: 2.5rem 0;
+
+  }
+  .factsList > p {
+    margin: 1.5rem .5rem;
+  }
+}
+
+/****** About Section ******/
