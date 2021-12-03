@@ -29,9 +29,9 @@ const Home = () => {
 
       <main className={styles.main} id="main">
         <div className={styles.header}>
-          <h3>{`Hi, I'm`}</h3>
-          <h1>Juan Marin</h1>
-          <h3>Take a look at my Portfolio</h3>
+          <h1 className={styles.subHeader}>{`Hi, I'm`}</h1>
+          <h1 className={styles.mainHeader}>Juan Marin</h1>
+          <h1 className={styles.subHeader}>Take a look at my Portfolio</h1>
         </div>
         <div className={styles.blend}></div>
         <video ref={videoRef} src={"/video.mp4"} className="video-background" muted playsInline sophis-video-control="true"></video>
