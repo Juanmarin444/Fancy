@@ -95,6 +95,45 @@
 }
 
 /****** About Section ******/
+/****** TechSkills Section ******/
+
+.alnCenter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.tech {
+  width: 25%;
+  min-width: 286px;
+  display: flex;
+  justify-content: center;
+  margin: .78125rem;
+  background: #e6e6e6;
+  border-radius: 10px;
+  color: black;
+}
+
+.icon {
+  width: 100px;
+  height: 150px;
+}
+
+.tech h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.techInfo {
+  padding: 3em 2em 3.5em 2em;
+}
+
+/****** TechSkills Section ******/
 
 .logo {
   height: 1em;

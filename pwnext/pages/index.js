@@ -36,8 +36,8 @@ const Home = () => {
         <div className={styles.blend}></div>
         <video ref={videoRef} src={"/video.mp4"} className="video-background" muted playsInline sophis-video-control="true"></video>
       </main>
-      <Projects />
       <About />
+      <Projects />
       <Contact />
     </div>
   )
