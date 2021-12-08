@@ -1,151 +1,49 @@
 import styles from '../../styles/Home.module.css'
 import Image from 'next/image'
 import myAvatar from '../../public/myAvatar.svg'
+import Tech from '../../components/Tech.js'
 
 const About = () => {
   return (
-    <div className={`${styles.section} ${styles.about}`}>
+    <section className={`${styles.section} ${styles.about}`}>
       <h1>WHO IS THIS GUY?</h1>
       <div className={styles.avatar}>
         <Image src={myAvatar} alt={"My avatar"} />
       </div>
       <div className={styles.info}>
-        <h2>If {`you're`} searching for someone with a curious mind and approaches difficulties</h2>
-        <h2>with a positive attitude, {`you've`} come to the right place.</h2>
-        <br />
-        <br />
-        <p>{`I'm`} a web developer with experience in a few web frameworks.</p>
-        <p>{`I've`} honed my skills working with small groups to produce remarkable things.</p>
-        <p>My goal is to join a team where I can help make the internet a more enjoyable place.</p>
+        <div className={styles.infoText}>
+          <h2>If {`you're`} searching for someone with a curious mind and approaches difficulties</h2>
+          <h2>with a positive attitude, {`you've`} come to the right place.</h2>
+        </div>
+        <div className={styles.infoText}>
+          <p>{`I'm`} a web developer with experience in a few web frameworks.</p>
+          <p>{`I've`} honed my skills working with small groups to produce remarkable things.</p>
+          <p>My goal is to join a team where I can help make the internet a more enjoyable place.</p>
+        </div>
       </div>
-      <div className={styles.techSkills}>
+      <div className={styles.skills}>
         <header>
           <h2>{`Here's`} some technologies {`I've`} used</h2>
         </header>
         <div className={styles.alnCenter}>
-          <div className={styles.tech}>
-            <section className={styles.techInfo}>
-              <div className={styles.icon}>
-                <Image className={styles.techIcon} alt={'temp alt'} src='/assets/javascriptIcon.png' height="100px" width="100px"/>
-              </div>
-              <h3>JavaScript</h3>
-            </section>
-          </div>
-          <div className={styles.tech}>
-            <section className={styles.techInfo}>
-              <div className={styles.icon}>
-                <Image className={styles.techIcon} alt={'temp alt'} src='/assets/reactIcon.png' height="100px" width="100px"/>
-              </div>
-              <h3>React</h3>
-            </section>
-          </div>
-          <div className={styles.tech}>
-            <section className={styles.techInfo}>
-              <div className={styles.icon}>
-                <Image className={styles.techIcon} alt={'temp alt'} src='/assets/reduxIcon.png' height="100px" width="100px"/>
-              </div>
-              <h3>Redux</h3>
-            </section>
-          </div>
-          <div className={styles.tech}>
-            <section className={styles.techInfo}>
-              <div className={styles.icon}>
-                <Image className={styles.techIcon} alt={'temp alt'} src='/assets/nodejsIcon.png' height="100px" width="100px"/>
-              </div>
-              <h3>Node.js</h3>
-            </section>
-          </div>
-          <div className={styles.tech}>
-            <section className={styles.techInfo}>
-              <div className={styles.icon}>
-                <Image className={styles.techIcon} alt={'temp alt'} src='/assets/djangoIcon.png' height="100px" width="100px"/>
-              </div>
-              <h3>Django</h3>
-            </section>
-          </div>
-          <div className={styles.tech}>
-            <section className={styles.techInfo}>
-              <div className={styles.icon}>
-                <Image className={styles.techIcon} alt={'temp alt'} src='/assets/flaskIcon.png' height="100px" width="100px"/>
-              </div>
-              <h3>Flask</h3>
-            </section>
-          </div>
-          <div className={styles.tech}>
-            <section className={styles.techInfo}>
-              <div className={styles.icon}>
-                <Image className={styles.techIcon} alt={'temp alt'} src='/assets/sqliteIcon.png' height="100px" width="100px"/>
-              </div>
-              <h3>SQLite</h3>
-            </section>
-          </div>
-          <div className={styles.tech}>
-            <section className={styles.techInfo}>
-              <div className={styles.icon}>
-                <Image className={styles.techIcon} alt={'temp alt'} src='/assets/mongodbIcon.png' height="100px" width="100px"/>
-              </div>
-              <h3>mongoDB</h3>
-            </section>
-          </div>
-          <div className={styles.tech}>
-            <section className={styles.techInfo}>
-              <div className={styles.icon}>
-                <Image className={styles.techIcon} alt={'temp alt'} src='/assets/nextjsIcon.svg' height="100px" width="100px"/>
-              </div>
-              <h3>Next</h3>
-            </section>
-          </div>
-          <div className={styles.tech}>
-            <section className={styles.techInfo}>
-              <div className={styles.icon}>
-                <Image className={styles.techIcon} alt={'temp alt'} src='/assets/swiftIcon.png' height="100px" width="100px"/>
-              </div>
-              <h3>Swift</h3>
-            </section>
-          </div>
-          <div className={styles.tech}>
-            <section className={styles.techInfo}>
-              <div className={styles.icon}>
-                <Image className={styles.techIcon} alt={'temp alt'} src='/assets/pugIcon.png' height="100px" width="100px"/>
-              </div>
-              <h3>Pug</h3>
-            </section>
-          </div>
-          <div className={styles.tech}>
-            <section className={styles.techInfo}>
-              <div className={styles.icon}>
-                <Image className={styles.techIcon} alt={'temp alt'} src='/assets/sassIcon.png' height="100px" width="100px"/>
-              </div>
-              <h3>Sass</h3>
-            </section>
-          </div>
-          <div className={styles.tech}>
-            <section className={styles.techInfo}>
-              <div className={styles.icon}>
-                <Image className={styles.techIcon} alt={'temp alt'} src='/assets/gitIcon.png' height="100px" width="100px"/>
-              </div>
-              <h3>Git</h3>
-            </section>
-          </div>
-          <div className={styles.tech}>
-            <section className={styles.techInfo}>
-              <div className={styles.icon}>
-                <Image className={styles.techIcon} alt={'temp alt'} src='/assets/htmlIcon.png' height="100px" width="100px"/>
-              </div>
-              <h3>HTML</h3>
-            </section>
-          </div>
-          <div className={styles.tech}>
-            <section className={styles.techInfo}>
-              <div className={styles.icon}>
-                <Image className={styles.techIcon} alt={'temp alt'} src='/assets/cssIcon.png' height="100px" width="100px"/>
-              </div>
-              <h3>CSS</h3>
-            </section>
-          </div>
+          <Tech name="JavaScript" src="/assets/javascriptIcon.png" />
+          <Tech name="React" src="/assets/reactIcon.png"/>
+          <Tech name="Redux" src="/assets/reduxIcon.png" />
+          <Tech name="Node.js" src="/assets/nodejsIcon.png" />
+          <Tech name="Django" src="/assets/djangoIcon.png" />
+          <Tech name="Flask" src="/assets/flaskIcon.png"/>
+          <Tech name="SQLite" src="/assets/sqliteIcon.png"/>
+          <Tech name="MongoDB" src="/assets/mongodbIcon.png"/>
+          <Tech name="Next" src="/assets/nextjsIcon.svg" />
+          <Tech name="Pug" src="/assets/pugIcon.png" />
+          <Tech name="Sass" src="/assets/sassIcon.png" />
+          <Tech name="Swift" src="/assets/swiftIcon.png" />
+          <Tech name="Git" src="/assets/gitIcon.png" />
+          <Tech name="HTML" src="/assets/htmlIcon.png" />
+          <Tech name="CSS" src="/assets/cssIcon.png" />
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
