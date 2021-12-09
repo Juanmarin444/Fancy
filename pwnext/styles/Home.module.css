@@ -168,17 +168,18 @@
   flex-wrap: wrap;
   grid-gap: 1.25rem;
   width: 90%;
+  margin: 4rem 0;
 }
 /****** Projects Section ******/
-/****** Projects Component ******/
+/****** Project Component ******/
 
 .project {
-  /* margin: 2.5rem; */
   background: white;
   padding: 1rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   min-width: 225px;
+  border-radius: 10px;
 }
 
 .projectInfo {
@@ -193,16 +194,21 @@
 
 .projectButton {
   margin-top: 2rem;
-  padding: .75rem 1.25rem;
+  padding: .5rem 1.25rem;
   background: dodgerblue;
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  border-radius: 10px;
 }
 
-/****** Projects Component ******/
+.project h3 {
+  /* font-size: px; */
+  font-weight: normal;
+}
+/****** Project Component ******/
 
 .logo {
   height: 1em;

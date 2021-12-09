@@ -6,8 +6,8 @@ const Project = ({image, name, description, url, github}) => {
     <div className={styles.project}>
       <Image src={image} alt={name} />
       <div className={styles.projectInfo}>
-        <p className={styles.projectName}>{name}</p>
-        <p className={styles.projectDescription}>{description}</p>
+        <h2 className={styles.projectName}>{name}</h2>
+        <h3 className={styles.projectDescription}>{description}</h3>
         <div className={styles.projectButtons}>
           <a href={url} className={styles.projectButton} target="_blank" rel="noreferrer">Website</a>
           <a href={github} className={styles.projectButton} target="_blank" rel="noreferrer">GitHub</a>
