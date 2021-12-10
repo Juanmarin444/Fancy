@@ -2,7 +2,7 @@ import taskManager from './assets/projects/task-manager-demo.gif';
 import courseTracker from './assets/projects/courseTracker.png';
 import worldClock from './assets/projects/world-clocks-demo.gif';
 import weatherApp from './assets/projects/weather-app-demo.gif';
-import smartShop from './assets/projects/smart-shop-demo.gif';
+import jcomm from './assets/projects/j-comm.gif';
 import javascriptArcade from './assets/projects/javascript-arcade-demo.gif';
 import windowsEmail from './assets/projects/windowsEmail.gif';
 import brilliantEmail from './assets/projects/brilliantEmail.gif';
@@ -40,10 +40,10 @@ export const myprojects = {
     gitUrl: "https://github.com/Juanmarin444/Weather-App"
   },
   smartShopData : {
-    name: "Smart Shop",
-    image: smartShop,
+    name: "J-COMM",
+    image: jcomm,
     desc: "An ecommerce site made using Mongodb, Express, React, and Node",
-    url: "https://smartshop-jm.herokuapp.com/",
+    url: "https://j-comm.herokuapp.com/",
     gitUrl: "https://github.com/Juanmarin444/smartshop"
   },
   javascriptArcadeData : {
