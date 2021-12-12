@@ -7,6 +7,7 @@ import Head from 'next/head'
 import Projects from '../sections/Projects'
 import About from '../sections/About'
 import Contact from '../sections/Contact'
+import Footer from '../components/Footer.js'
 
 import styles from '../styles/Home.module.css'
 
@@ -19,10 +20,11 @@ const Home = () => {
   useEffect(() => {
     scroll(gsap, videoRef)
   })
+
   return (
     <div className={styles.container} id="container">
       <Head>
-        <title>Video Scroll</title>
+        <title>Juan Marin</title>
         <meta name="description" content="GSAP ScrollTrigger" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -39,6 +41,7 @@ const Home = () => {
       <About />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   )
 }

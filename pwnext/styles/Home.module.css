@@ -177,7 +177,6 @@
 /****** Project Component ******/
 
 .project {
-  /* background: white; */
   background: #353535;
   color: white;
   padding: 1rem;
@@ -188,7 +187,7 @@
 }
 
 .projectInfo {
-  padding: 1rem;
+  padding: .5rem;
   max-width: 600px;
 }
 
@@ -216,7 +215,6 @@
 }
 
 .projectDescription {
-  display:inline-block;
   font-weight: normal;
   word-wrap: break-word;
 }
@@ -282,7 +280,6 @@
 .contact h1 {
   font-size: 3rem;
   max-width: 90%;
-  /* margin: 0 auto; */
   color: white;
 }
 
@@ -293,17 +290,14 @@
 }
 
 /***** Contact Sections *****/
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
+/***** Footer component *****/
 
 .footer {
+  background: #353535;
+  color: white;
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
 }
@@ -314,6 +308,13 @@
   align-items: center;
   flex-grow: 1;
 }
+
+.logo {
+  height: 1.475rem;
+  margin-left: 1rem;
+}
+
+/***** Footer component *****/
 
 @media screen and (max-width:780px) {
   .about h1 {
