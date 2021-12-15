@@ -1,7 +1,7 @@
 const Project = ({image, name, description, url, github}) => {
   return (
     <div className="project">
-      <img src={image} alt={name} />
+      <img className="projectGif" src={image} alt={name} />
       <div className="projectInfo">
         <h2 className="projectName">{name}</h2>
         <h3 className="projectDescription">{description}</h3>
