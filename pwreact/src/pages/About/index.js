@@ -8,7 +8,7 @@ const About = () => {
     <section className="section about">
       <h1>WHO IS THIS GUY?</h1>
       <div className="avatar">
-        <img src={myAvatar} alt={"My avatar"} />
+        <img className="myAvatar" src={myAvatar} alt={"My avatar"} />
       </div>
       <div className="info">
         <div className="infoText">
