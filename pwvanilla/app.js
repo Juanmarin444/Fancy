@@ -19,7 +19,7 @@ function once(el, event, fn, opts) {
 }
 
 once(document.documentElement, "touchstart", function (e) {
-  video.play();
+  video.load();
   video.pause();
 });
 
