@@ -31,10 +31,11 @@ gsap.registerPlugin(ScrollTrigger);
 let tl = gsap.timeline({
   defaults: { duration: 1 },
   scrollTrigger: {
-    trigger: "#container",
-    start: "top top",
-    end: "bottom bottom",
-    scrub: true
+    trigger: "#main",
+    start: "0%",
+    end: "400%",
+    scrub: true,
+    pin: true
   }
 });
 
